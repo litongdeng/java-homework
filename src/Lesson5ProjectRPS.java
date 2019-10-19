@@ -7,14 +7,14 @@ public class Lesson5ProjectRPS {
         int userScore = 0, compScore = 0, computerNumber = 0;
         boolean peekedBool = false, needNewChoice = true;
         char computerChoice = ' ';
-
+    wrap: while (true) {
         for (int i = 1; i <= 10; i++) {
             System.out.println("Your Score: " + userScore + ", Computer Score: " + compScore);
 
-            System.out.println("Round " + i + " - Please select R, P, or S; press Q to quit, press K to peek at your opponent's choice for the cost of rfvgtcfrswone point. ");
+            System.out.println("Round " + i + " - Please select R, P, or S; press Q to quit, press K to peek at your opponent's choice for the cost of one point. ");
             char userChoice = userInput.next().toUpperCase().charAt(0);
             if (userChoice == 'Q') {
-                break;
+                break wrap;
             }
             if (userChoice != 'R' && userChoice != 'P' && userChoice != 'S' && userChoice != 'K') {
                 System.out.println("You should enter only R, P, S, K, or Q; nothing else is acceptable. ");
@@ -53,7 +53,7 @@ public class Lesson5ProjectRPS {
                     if (needNewChoice) {
                         userScore += 2;
                     } else {
-                        userScore ++;
+                        userScore++;
                     }
                     System.out.println("Your opponent picked " + computerChoice + ". You won!");
                 } else {
@@ -64,12 +64,14 @@ public class Lesson5ProjectRPS {
             needNewChoice = true;
         }
         System.out.print("Good game! ");
+
         if (compScore > userScore) {
             System.out.println("Your opponent won. Nice try. ");
         } else if (compScore < userScore)
             System.out.println("Congratulations! You won.");
         else
             System.out.println("You tied.");
+    }
     }
 
 }

@@ -56,7 +56,7 @@ public class Lesson2 {
         String s3 = "\" is double quote";
 
         System.out.println("s2 is: " + s2);
-        
+
     }
 
 }
