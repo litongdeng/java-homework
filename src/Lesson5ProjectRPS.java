@@ -15,7 +15,7 @@ public class Lesson5ProjectRPS {
             System.out.println("Round " + i + " - Please select R, P, or S; press Q to quit, press K to peek at your opponent's choice for the cost of one point. ");
             char userChoice = userInput.next().toUpperCase().charAt(0);
             if (userChoice == 'Q') {
-                break;
+                break wrap;
             }
             if (userChoice != 'R' && userChoice != 'P' && userChoice != 'S' && userChoice != 'K') {
                 System.out.println("You should enter only R, P, S, K, or Q; nothing else is acceptable. ");
@@ -68,11 +68,11 @@ public class Lesson5ProjectRPS {
 
         if (compScore > userScore) {
             System.out.println("Your opponent won. Nice try. ");
-        } else if (compScore < userScore)
+            } else if (compScore < userScore)
             System.out.println("Congratulations! You won.");
         else
             System.out.println("You tied.");
-    }
+        }
     }
 
 }
