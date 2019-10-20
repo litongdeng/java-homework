@@ -9,12 +9,13 @@ public class Lesson5ProjectRPS {
         char computerChoice = ' ';
     wrap: while (true) {
         for (int i = 1; i <= 10; i++) {
+
             System.out.println("Your Score: " + userScore + ", Computer Score: " + compScore);
 
             System.out.println("Round " + i + " - Please select R, P, or S; press Q to quit, press K to peek at your opponent's choice for the cost of one point. ");
             char userChoice = userInput.next().toUpperCase().charAt(0);
             if (userChoice == 'Q') {
-                break wrap;
+                break;
             }
             if (userChoice != 'R' && userChoice != 'P' && userChoice != 'S' && userChoice != 'K') {
                 System.out.println("You should enter only R, P, S, K, or Q; nothing else is acceptable. ");
