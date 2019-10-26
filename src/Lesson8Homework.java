@@ -14,6 +14,12 @@ public class Lesson8Homework {
         if (i >= intArray.length) {
             System.out.println("There isn't an odd number in this array! ");
         }
+
+        // Write a for loop negating every number in an array and then proceed to print the array
+        for (int x = 0; x < intArray.length; x++) {
+            intArray[x] *= -1;
+            System.out.println(intArray[x]);
+        }
     }
 
 }
