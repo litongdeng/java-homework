@@ -21,5 +21,4 @@ public class Lesson8Homework {
             System.out.println(intArray[x]);
         }
     }
-
 }
