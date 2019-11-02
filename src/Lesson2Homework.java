@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Lesson2Homework {
-    public static void main ( String argv [] ) {
+    public static void main (String[] argv) {
         Scanner sc = new Scanner (System.in);
         System.out.println("Please enter the value for x: ");
         int x = sc.nextInt(); //take input from user, assigns it to x as an int

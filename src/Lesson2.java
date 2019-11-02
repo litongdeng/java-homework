@@ -1,6 +1,6 @@
 public class Lesson2 {
 
-    public static void main (String argv []) {
+    public static void main (String[] argv) {
         int x; //declare
         x = 2; //assign
         // initialize y with some value

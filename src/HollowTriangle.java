@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class HollowTriangle {
-    public static void main (String argv []){
+    public static void main (String[] argv){
 
 
         // hollow triangle

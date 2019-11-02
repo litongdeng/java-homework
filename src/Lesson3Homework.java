@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Lesson3Homework {
-    public static void main ( String argv [] ) {
+    public static void main (String[] argv) {
         Scanner sc = new Scanner(System.in);
         System.out.println("What time is it? Please enter the time in 24-hour format. ");
         int time = sc.nextInt();
