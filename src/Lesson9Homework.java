@@ -6,7 +6,7 @@ public class Lesson9Homework {
 
         System.out.println(); // skipping a line in between
 
-        System.out.println(intInAlphabet(999));
+        System.out.println(intInAlphabet(-99));
 
         System.out.println(); // skipping a line in between
 
@@ -36,7 +36,7 @@ public class Lesson9Homework {
     }
 
     static char[] halfArray(char[] inputArray) {
-        int newArrayLength;//= inputArray.length % 2 == 0 ? inputArray.length / 2 : inputArray.length / 2 + 1;
+        int newArrayLength;
 
         if (inputArray.length % 2 == 0) {
             newArrayLength = inputArray.length / 2;
@@ -44,7 +44,6 @@ public class Lesson9Homework {
             newArrayLength = inputArray.length / 2 + 1;
         }
         char[] updatedArray = new char[newArrayLength];
-        //System.arraycopy(inputArray, 0, updatedArray, 0, newArrayLength);
         for (int i = 0; i < newArrayLength; i++) {
             updatedArray[i] = inputArray[i];
         }

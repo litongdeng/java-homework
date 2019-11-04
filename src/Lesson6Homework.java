@@ -1,12 +1,12 @@
 public class Lesson6Homework {
     public static void main (String argv [] ) {
-//        int x = 1;
-//        while (x <= 100) {
-//            if (x % 7 != 0 && Integer.toString(x).indexOf('7') < 0) {
-//                System.out.println(x);
-//            }
-//            x++;
-//        }
+        int x = 1;
+        while (x <= 100) {
+            if (x % 7 != 0 && Integer.toString(x).indexOf('7') < 0) {
+                System.out.println(x);
+            }
+            x++;
+        }
 
         // hollow square 5 x 5
        // int n = 20;
