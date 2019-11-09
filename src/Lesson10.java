@@ -1,25 +1,25 @@
 public class Lesson10 {
     public static void main(String[] argv) {
-        System.out.println(factorialOf(6));
-        System.out.println(factorialOf(-2));
-        System.out.println(factorialOf(99));
-        System.out.println(factorialOf(0));
+//        System.out.println(factorialOf(6));
+//        System.out.println(factorialOf(-2));
+//        System.out.println(factorialOf(99));
+//        System.out.println(factorialOf(0));
+//
+//        System.out.println();
+//
+//        System.out.println(harmonic(5));
+//        System.out.println(harmonic(0));
+//        System.out.println(harmonic(-2));
+//
+//        System.out.println();
+//
+//        factorsOf(-1);
+//        factorsOf(101);
+//        factorsOf(0);
+//
+//        System.out.println();
 
-        System.out.println();
-
-        System.out.println(harmonic(5));
-        System.out.println(harmonic(0));
-        System.out.println(harmonic(-2));
-
-        System.out.println();
-
-        factorsOf(-1);
-        factorsOf(101);
-        factorsOf(0);
-
-        System.out.println();
-
-        System.out.println(sumOfDigits(262));
+        System.out.println(sumOfDigits(999));
 
         System.out.println();
     }
