@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Lesson10Homework {
-    public static void main (String [] argv) {
+    public static void main(String[] argv) {
         // Project - "Coza Loza Woza"
         System.out.println("Any number that is a multiple of/contains three will be replaced by \"Coza\".");
         System.out.println("Any number that is a multiple of/contains five will be replaced by \"Loza\".");
@@ -32,6 +32,7 @@ public class Lesson10Homework {
             n = sc.nextInt();
         }
     }
+
     static boolean isMultiple(int a, int b) {
         if (b == 0) {
             return false;
