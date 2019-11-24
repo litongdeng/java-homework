@@ -32,6 +32,7 @@ public class Card {
     public static void main(String[] argv) {
         System.out.println("Welcome to the Card Game! Ace = 1, Jack = 11, Queen = 12, King = 13, and the rest of the cards are equivalent to their face value. ");
 
+
         Card c = new Card();
         c.suit = "Spades";
         c.num = 12;
@@ -57,6 +58,8 @@ public class Card {
         int humanScore = 0, computerScore = 0;
         Scanner sc = new Scanner(System.in);
         for (int round = 1; round <= 10; round++) {
+            System.out.println("Round " + round);
+
             System.out.println("Computer hand: ");
             printDeck(computerHand);
             System.out.println("\nYour hand: ");
@@ -72,21 +75,25 @@ public class Card {
                     continue;
                 }
                 humanCard = humanHand[humanPlay - 1];
-                System.out.print("You played: ");
-                humanCard.print();
-                System.out.println();
                 if (!humanCard.hasBeenPlayed) {
+                    System.out.print("You played: ");
+                    humanCard.print();
+                    System.out.println();
                     break;
+                } else {
+                    System.out.println("This card has already been played. Please select another card. ");
                 }
+
             }
             Card computerCard;
             while (true) {
                 int computerPlay = (int) (Math.random() * 10);
                 computerCard = computerHand[computerPlay];
-                System.out.print("Computer played: ");
-                computerCard.print();
                 System.out.println();
                 if (!computerCard.hasBeenPlayed) {
+                    System.out.print("Computer played: ");
+                    computerCard.print();
+                    System.out.println();
                     break;
                 }
             }
@@ -107,6 +114,13 @@ public class Card {
 
             humanCard.hasBeenPlayed = true;
             computerCard.hasBeenPlayed = true;
+        }
+        if (computerScore > humanScore) {
+            System.out.println("You lost. Better luck next time! ");
+        } else if (humanScore > computerScore) {
+            System.out.println("You won! Congratulations! ");
+        } else {
+            System.out.println("You tied! ");
         }
     }
 
