@@ -27,7 +27,7 @@ public class Lesson13Homework {
             return false;
         } else if (!phoneNum.substring(4,5).equals(")")) {
             return false;
-        } else if (phoneNum.substring(9,10).equals("-")) {
+        } else if (!phoneNum.substring(9,10).equals("-")) {
             return false;
         }
 
@@ -38,11 +38,11 @@ public class Lesson13Homework {
         String onlyDigit = firstThree + secondThree + lastFour;
 
         for (int i = 0; i < onlyDigit.length(); i++) {
-            if (onlyDigit.charAt(i) >= '0' && onlyDigit.charAt(i) <= '9') {
-                return true;
+            if (!(onlyDigit.charAt(i) >= '0' && onlyDigit.charAt(i) <= '9')) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     static char getPrevAlphabet(char letter) {
